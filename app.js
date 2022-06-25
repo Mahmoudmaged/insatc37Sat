@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require("express");
 const connectDB = require('./DB/connection');
 const app = express()
-const port = process.env.port
+const port = process.env.PORT
 const indexRouter = require("./modules/index.router")
 const schedule = require('node-schedule');
 app.use(express.json())
